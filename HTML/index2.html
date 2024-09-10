@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina 2</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/icono.PNG">
+</head>
+<body>
+    <p id="p1">Este es el párrafo al que queremos aplicar un fondo.</p>
+
+    <hr>
+
+    <table class="tabla-personas">
+        <thead>
+            <tr>
+                <th>Persona</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Persona1</td>
+                <td>Juan Felipe</td>
+            </tr>
+            <tr>
+                <td>Persona2</td>
+                <td>Sebastian</td>
+            </tr>
+            <tr>
+                <td>Persona3</td>
+                <td>Danny</td>
+            </tr>
+            <tr>
+                <td>Persona4</td>
+                <td>Santiago</td>
+            </tr>
+            <tr>
+                <td>Persona5</td>
+                <td>Alejandro</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h6>Una lista de HTML</h6>
+
+    <ol class="lista-principal">
+        <li>Café
+            <ul>
+                <li>Capuchino</li>
+                <li>Mocca</li>
+            </ul>
+        </li>
+        <li>Té
+            <ul>
+                <li>Té negro</li>
+                <li>Té verde</li>
+            </ul>
+        </li>
+        <li>Leche
+            <ul>
+                <li>Deslactosada</li>
+                <li>Descremada</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+    <div class="h7">Elementos DIV Múltiples</div>
+
+    <div class="info-java">
+        <h2>Java</h2>
+        <p>Java es un lenguaje de programación orientado a objetos, conocido por su portabilidad entre plataformas gracias a la máquina virtual Java (JVM).</p>
+    </div>
+
+    <div class="info-cpp">
+        <h2>C++</h2>
+        <p>C++ es un lenguaje de programación que extiende el lenguaje C con características orientadas a objetos, y es ampliamente utilizado en aplicaciones de sistemas y desarrollo de software.</p>
+    </div>
+
+    <div class="info-python">
+        <h2>Python</h2>
+        <p>Python es un lenguaje de programación de alto nivel conocido por su sintaxis simple y legible, y es utilizado en una variedad de aplicaciones, desde desarrollo web hasta análisis de datos.</p>
+    </div>
+    <hr>
+    <h7>Uso del atributo class en JavaScript</h7>
+    <p>Haz clic en el botón para ocultar todos los elementos con la clase "lenguaje":</p>
+
+    <button onclick="miFuncion()">Ocultar elementos</button>
+
+    <h2 class="lenguaje">Java</h2>
+    <p>Java es conocido por su portabilidad entre plataformas.</p>
+
+    <h2 class="lenguaje">C++</h2>
+    <p>C++ es popular en desarrollo de sistemas y aplicaciones.</p>
+
+    <h2 class="lenguaje">Python</h2>
+    <p>Python es fácil de leer y usado en muchas áreas.</p>
+
+    <script>
+        function miFuncion() {
+            var x = document.getElementsByClassName("lenguaje");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+    <hr>
+    <h1>Uso del atributo id en JavaScript</h1>
+    <p>JavaScript puede acceder a un elemento con un id especificado utilizando el método getElementById():</p>
+
+    <h8 id="miEncabezado">¡Hola Mundo!</h8>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+    <button onclick="restaurarTexto()">Restaurar texto</button>
+
+    <script>
+    function cambiarTexto() {
+    document.getElementById("miEncabezado").innerHTML = "¡Que tengas un buen día!";
+    }
+
+    function restaurarTexto() {
+    document.getElementById("miEncabezado").innerHTML = "¡Hola Mundo!";
+    }
+    </script>
+    <hr>
+    <h9>Iframe - Destino para un Enlace</h9>
+
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Ejemplo de Iframe"></iframe>
+
+    <p><button id="btn-blackboard" onclick="window.open('https://blackboard.libertadores.edu.co/', 'iframe_a')">Abrir Blackboard</button></p>
+
+    <p>Cuando el atributo target de un enlace coincide con el nombre de un iframe, el enlace se abrirá en el iframe.</p>
+
+    <hr>
+
+    <h11>Bienvenido al Index 1</h11>
+    <button onclick="location.href='index.html'">Ir a Index 1</button>
+</body>
+</html>
