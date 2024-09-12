@@ -1,6 +1,6 @@
 ﻿# HTML
 
-## Taller de CSS hasta reponsive
+## Taller de HTML hasta reponsive
 
 Integrantes
 -Santiago Ricardo Orduz
