@@ -5,4 +5,5 @@
 Integrantes
 
 -Juan felipe Fajardo
-.Alejandro Ostos
+-Alejandro Ostos
+.Santiago Orduz
